@@ -23,6 +23,12 @@ label.addEventListener("click", () => {
       body.style.backgroundColor = "#fff";
     }
    // updateLocalStorage(); // Save mode to localStorage
+   
+   updateLocalStorage();
   }, 800);
 });
+
+function updateLocalStorage() {
+  localStorage.setItem('mode', JSON.stringify(checkBox.checked));
+}
 
